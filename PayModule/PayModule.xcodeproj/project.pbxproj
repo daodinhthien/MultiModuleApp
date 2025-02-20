@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2683717DC9D0DF4FD87AFB26 /* Pods_PayModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19907A16D07BAE1F71FC39E2 /* Pods_PayModule.framework */; };
 		771D3C142D66DF3700E883F2 /* PayModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 771D3C132D66DF3700E883F2 /* PayModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		771D3C262D66E04400E883F2 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771D3C242D66E04400E883F2 /* PayViewController.swift */; };
 		771D3C272D66E04400E883F2 /* PayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 771D3C252D66E04400E883F2 /* PayViewController.xib */; };
@@ -15,12 +16,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19907A16D07BAE1F71FC39E2 /* Pods_PayModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5871C5154C591D238ACE1EA1 /* Pods-PayModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayModule.release.xcconfig"; path = "Target Support Files/Pods-PayModule/Pods-PayModule.release.xcconfig"; sourceTree = "<group>"; };
 		771D3C102D66DF3700E883F2 /* PayModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PayModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		771D3C132D66DF3700E883F2 /* PayModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayModule.h; sourceTree = "<group>"; };
 		771D3C242D66E04400E883F2 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
 		771D3C252D66E04400E883F2 /* PayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayViewController.xib; sourceTree = "<group>"; };
 		771D3C282D66E05C00E883F2 /* PayModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayModuleManager.swift; sourceTree = "<group>"; };
 		771D3C2A2D66E0D500E883F2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DCB112DEF3C4AB502535E6C9 /* Pods-PayModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayModule.debug.xcconfig"; path = "Target Support Files/Pods-PayModule/Pods-PayModule.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +32,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2683717DC9D0DF4FD87AFB26 /* Pods_PayModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		088AA5A8FC14BC7223BB9C08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCB112DEF3C4AB502535E6C9 /* Pods-PayModule.debug.xcconfig */,
+				5871C5154C591D238ACE1EA1 /* Pods-PayModule.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		771D3C062D66DF3700E883F2 = {
 			isa = PBXGroup;
 			children = (
 				771D3C122D66DF3700E883F2 /* PayModule */,
 				771D3C112D66DF3700E883F2 /* Products */,
+				088AA5A8FC14BC7223BB9C08 /* Pods */,
+				9AF9F07F442FDC8102343D48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +79,14 @@
 			path = PayModule;
 			sourceTree = "<group>";
 		};
+		9AF9F07F442FDC8102343D48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19907A16D07BAE1F71FC39E2 /* Pods_PayModule.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -80,6 +105,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 771D3C172D66DF3700E883F2 /* Build configuration list for PBXNativeTarget "PayModule" */;
 			buildPhases = (
+				1F5F88643A03E95E48750C0A /* [CP] Check Pods Manifest.lock */,
 				771D3C0B2D66DF3700E883F2 /* Headers */,
 				771D3C0C2D66DF3700E883F2 /* Sources */,
 				771D3C0D2D66DF3700E883F2 /* Frameworks */,
@@ -137,6 +163,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F5F88643A03E95E48750C0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PayModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		771D3C0C2D66DF3700E883F2 /* Sources */ = {
@@ -279,6 +330,7 @@
 		};
 		771D3C182D66DF3700E883F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCB112DEF3C4AB502535E6C9 /* Pods-PayModule.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -313,6 +365,7 @@
 		};
 		771D3C192D66DF3700E883F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5871C5154C591D238ACE1EA1 /* Pods-PayModule.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;

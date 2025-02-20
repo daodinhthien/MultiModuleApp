@@ -1,10 +1,20 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+
+workspace 'MultiModuleApp.xcworkspace'
+platform :ios, '10.0'
+use_frameworks!
+
+def main_pods
+  # add pods for the main target here
+end
 
 target 'MultiModuleApp' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  project 'MultiModuleApp.project'
+  main_pods
+end
 
-  # Pods for MultiModuleApp
-
+target 'PayModule' do
+  project 'PayModule/PayModule.xcodeproj'
+  
+  main_pods
 end
