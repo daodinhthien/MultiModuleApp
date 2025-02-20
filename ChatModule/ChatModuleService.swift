@@ -5,7 +5,7 @@
 //  Created by ThienDD9 on 20/02/2025.
 //
 
-public protocol ChatModuleProtocol: AnyObject {
+public protocol ChatModuleProtocol {
     func getMessage() -> String?
 }
 

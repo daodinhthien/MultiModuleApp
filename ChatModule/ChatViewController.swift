@@ -8,7 +8,7 @@
 import UIKit
 
 class ChatViewController: BaseViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Chat Module"

@@ -5,7 +5,7 @@
 //  Created by ThienDD9 on 20/02/2025.
 //
 
-public protocol PayModuleServiceProtocol: AnyObject {
+public protocol PayModuleServiceProtocol {
     func getName() -> String?
 }
 
