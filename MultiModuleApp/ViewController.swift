@@ -7,6 +7,7 @@
 
 import UIKit
 import ChatModule
+import PayModule
 
 class HomeViewController: UIViewController {
 
@@ -18,6 +19,10 @@ class HomeViewController: UIViewController {
 
     @IBAction func showChatModule(_ sender: Any) {
         ChatModuleManager.share.showChat(rootVC: self)
+    }
+    
+    @IBAction func showPayModule(_ sender: Any) {
+        PayModuleManager.share.showPayModule(rootVC: self)
     }
 }
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B9732F6A7B6E96521190091 /* Pods_MultiModuleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2453371748F6632726CD97B9 /* Pods_MultiModuleApp.framework */; };
+		771D3C232D66E00C00E883F2 /* PayModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 771D3C202D66DFFA00E883F2 /* PayModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		77DEA4A82D66BA81008277CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DEA4A72D66BA81008277CF /* AppDelegate.swift */; };
 		77DEA4AA2D66BA81008277CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DEA4A92D66BA81008277CF /* SceneDelegate.swift */; };
 		77DEA4AC2D66BA81008277CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DEA4AB2D66BA81008277CF /* ViewController.swift */; };
@@ -24,6 +25,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		771D3C1F2D66DFFA00E883F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 771D3C1B2D66DFFA00E883F2 /* PayModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 771D3C102D66DF3700E883F2;
+			remoteInfo = PayModule;
+		};
+		771D3C212D66E00300E883F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 771D3C1B2D66DFFA00E883F2 /* PayModule.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 771D3C0F2D66DF3700E883F2;
+			remoteInfo = PayModule;
+		};
 		77DEA5632D66C80F008277CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 77DEA49C2D66BA81008277CF /* Project object */;
@@ -40,6 +55,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				771D3C232D66E00C00E883F2 /* PayModule.framework in Embed Frameworks */,
 				77DEA5662D66C80F008277CF /* ChatModule.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -51,6 +67,7 @@
 		2453371748F6632726CD97B9 /* Pods_MultiModuleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiModuleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3104A4EE0B809EDD3602905D /* Pods-MultiModuleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiModuleApp.release.xcconfig"; path = "Target Support Files/Pods-MultiModuleApp/Pods-MultiModuleApp.release.xcconfig"; sourceTree = "<group>"; };
 		633730AB8D4B07C86F32F392 /* Pods-MultiModuleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiModuleApp.debug.xcconfig"; path = "Target Support Files/Pods-MultiModuleApp/Pods-MultiModuleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		771D3C1B2D66DFFA00E883F2 /* PayModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PayModule.xcodeproj; path = PayModule/PayModule.xcodeproj; sourceTree = "<group>"; };
 		77DEA4A42D66BA81008277CF /* MultiModuleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiModuleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77DEA4A72D66BA81008277CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77DEA4A92D66BA81008277CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,9 +113,26 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		771D3C1A2D66DF9600E883F2 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				771D3C1B2D66DFFA00E883F2 /* PayModule.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		771D3C1C2D66DFFA00E883F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				771D3C202D66DFFA00E883F2 /* PayModule.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		77DEA49B2D66BA81008277CF = {
 			isa = PBXGroup;
 			children = (
+				771D3C1A2D66DF9600E883F2 /* Dependencies */,
 				77DEA4A62D66BA81008277CF /* MultiModuleApp */,
 				77DEA5602D66C80F008277CF /* ChatModule */,
 				77DEA4A52D66BA81008277CF /* Products */,
@@ -177,6 +211,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				771D3C222D66E00300E883F2 /* PBXTargetDependency */,
 				77DEA5642D66C80F008277CF /* PBXTargetDependency */,
 			);
 			name = MultiModuleApp;
@@ -232,6 +267,12 @@
 			mainGroup = 77DEA49B2D66BA81008277CF;
 			productRefGroup = 77DEA4A52D66BA81008277CF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 771D3C1C2D66DFFA00E883F2 /* Products */;
+					ProjectRef = 771D3C1B2D66DFFA00E883F2 /* PayModule.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				77DEA4A32D66BA81008277CF /* MultiModuleApp */,
@@ -239,6 +280,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		771D3C202D66DFFA00E883F2 /* PayModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PayModule.framework;
+			remoteRef = 771D3C1F2D66DFFA00E883F2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		77DEA4A22D66BA81008277CF /* Resources */ = {
@@ -310,6 +361,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		771D3C222D66E00300E883F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PayModule;
+			targetProxy = 771D3C212D66E00300E883F2 /* PBXContainerItemProxy */;
+		};
 		77DEA5642D66C80F008277CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 77DEA55E2D66C80F008277CF /* ChatModule */;
