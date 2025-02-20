@@ -82,6 +82,7 @@ class BaseViewController: UIViewController {
         } else {
             self.navigationController?.popToRootViewController(animated: true)
         }
+        
     }
 }
 
