@@ -13,6 +13,7 @@
 		771D3C272D66E04400E883F2 /* PayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 771D3C252D66E04400E883F2 /* PayViewController.xib */; };
 		771D3C292D66E05C00E883F2 /* PayModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771D3C282D66E05C00E883F2 /* PayModuleManager.swift */; };
 		771D3C2B2D66E0D500E883F2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771D3C2A2D66E0D500E883F2 /* BaseViewController.swift */; };
+		777B04B72D67177E006FE86A /* PayModuleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B04B62D67177E006FE86A /* PayModuleService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		771D3C252D66E04400E883F2 /* PayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayViewController.xib; sourceTree = "<group>"; };
 		771D3C282D66E05C00E883F2 /* PayModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayModuleManager.swift; sourceTree = "<group>"; };
 		771D3C2A2D66E0D500E883F2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		777B04B62D67177E006FE86A /* PayModuleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayModuleService.swift; sourceTree = "<group>"; };
 		DCB112DEF3C4AB502535E6C9 /* Pods-PayModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayModule.debug.xcconfig"; path = "Target Support Files/Pods-PayModule/Pods-PayModule.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 				771D3C252D66E04400E883F2 /* PayViewController.xib */,
 				771D3C282D66E05C00E883F2 /* PayModuleManager.swift */,
 				771D3C2A2D66E0D500E883F2 /* BaseViewController.swift */,
+				777B04B62D67177E006FE86A /* PayModuleService.swift */,
 			);
 			path = PayModule;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			files = (
 				771D3C292D66E05C00E883F2 /* PayModuleManager.swift in Sources */,
 				771D3C262D66E04400E883F2 /* PayViewController.swift in Sources */,
+				777B04B72D67177E006FE86A /* PayModuleService.swift in Sources */,
 				771D3C2B2D66E0D500E883F2 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

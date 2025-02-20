@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="MultiModuleApp" customModuleProvider="target">
             <connections>
+                <outlet property="contentLabel" destination="Sbc-Vo-E6V" id="tCh-I4-rER"/>
                 <outlet property="view" destination="Cz2-ko-4le" id="hGP-9I-zf2"/>
             </connections>
         </placeholder>
@@ -19,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgi-iD-jWj">
-                    <rect key="frame" x="16" y="408.66666666666669" width="361" height="35"/>
+                    <rect key="frame" x="16" y="308.66666666666669" width="361" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Show Chat Module"/>
                     <connections>
@@ -27,23 +28,32 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4T-O6-BTV">
-                    <rect key="frame" x="16" y="463.66666666666669" width="361" height="35"/>
+                    <rect key="frame" x="16" y="363.66666666666669" width="361" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Show Pay Module"/>
                     <connections>
                         <action selector="showPayModule:" destination="-1" eventType="touchUpInside" id="V0R-RI-Jex"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbc-Vo-E6V">
+                    <rect key="frame" x="16" y="431" width="361" height="20.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="e7f-j2-jQt"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="C4T-O6-BTV" firstAttribute="top" secondItem="Dgi-iD-jWj" secondAttribute="bottom" constant="20" id="Bge-nd-bFm"/>
+                <constraint firstItem="Sbc-Vo-E6V" firstAttribute="centerY" secondItem="C4T-O6-BTV" secondAttribute="centerY" constant="60" id="K1V-4d-MC5"/>
+                <constraint firstItem="Sbc-Vo-E6V" firstAttribute="leading" secondItem="C4T-O6-BTV" secondAttribute="leading" id="Ljg-Pc-gLW"/>
                 <constraint firstItem="e7f-j2-jQt" firstAttribute="trailing" secondItem="C4T-O6-BTV" secondAttribute="trailing" constant="16" id="MLm-hH-PP5"/>
                 <constraint firstItem="Dgi-iD-jWj" firstAttribute="leading" secondItem="e7f-j2-jQt" secondAttribute="leading" constant="16" id="NKX-zK-Mfz"/>
                 <constraint firstItem="Dgi-iD-jWj" firstAttribute="centerX" secondItem="Cz2-ko-4le" secondAttribute="centerX" id="S2G-lL-q3i"/>
-                <constraint firstItem="Dgi-iD-jWj" firstAttribute="centerY" secondItem="Cz2-ko-4le" secondAttribute="centerY" id="TCB-4N-qPw"/>
+                <constraint firstItem="Dgi-iD-jWj" firstAttribute="centerY" secondItem="Cz2-ko-4le" secondAttribute="centerY" constant="-100" id="TCB-4N-qPw"/>
                 <constraint firstItem="C4T-O6-BTV" firstAttribute="leading" secondItem="e7f-j2-jQt" secondAttribute="leading" constant="16" id="aTV-ie-ank"/>
+                <constraint firstItem="Sbc-Vo-E6V" firstAttribute="trailing" secondItem="C4T-O6-BTV" secondAttribute="trailing" id="gSx-LW-rXi"/>
                 <constraint firstItem="e7f-j2-jQt" firstAttribute="trailing" secondItem="Dgi-iD-jWj" secondAttribute="trailing" constant="16" id="qJG-tL-JFZ"/>
             </constraints>
             <point key="canvasLocation" x="-451.14503816793894" y="21.83098591549296"/>

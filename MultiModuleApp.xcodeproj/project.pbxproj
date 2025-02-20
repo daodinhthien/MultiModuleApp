@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3B9732F6A7B6E96521190091 /* Pods_MultiModuleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2453371748F6632726CD97B9 /* Pods_MultiModuleApp.framework */; };
 		771D3C232D66E00C00E883F2 /* PayModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 771D3C202D66DFFA00E883F2 /* PayModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		777B04B92D67189F006FE86A /* ChatModuleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B04B82D67189F006FE86A /* ChatModuleService.swift */; };
 		77DEA4A82D66BA81008277CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DEA4A72D66BA81008277CF /* AppDelegate.swift */; };
 		77DEA4AA2D66BA81008277CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DEA4A92D66BA81008277CF /* SceneDelegate.swift */; };
 		77DEA4AC2D66BA81008277CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DEA4AB2D66BA81008277CF /* ViewController.swift */; };
@@ -68,6 +69,7 @@
 		3104A4EE0B809EDD3602905D /* Pods-MultiModuleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiModuleApp.release.xcconfig"; path = "Target Support Files/Pods-MultiModuleApp/Pods-MultiModuleApp.release.xcconfig"; sourceTree = "<group>"; };
 		633730AB8D4B07C86F32F392 /* Pods-MultiModuleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiModuleApp.debug.xcconfig"; path = "Target Support Files/Pods-MultiModuleApp/Pods-MultiModuleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		771D3C1B2D66DFFA00E883F2 /* PayModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PayModule.xcodeproj; path = PayModule/PayModule.xcodeproj; sourceTree = "<group>"; };
+		777B04B82D67189F006FE86A /* ChatModuleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModuleService.swift; sourceTree = "<group>"; };
 		77DEA4A42D66BA81008277CF /* MultiModuleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiModuleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77DEA4A72D66BA81008277CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77DEA4A92D66BA81008277CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				77DEA56D2D66C84B008277CF /* ChatViewController.xib */,
 				77DEA5702D66C872008277CF /* ChatModuleManager.swift */,
 				77DEA5722D66CFD2008277CF /* BaseViewController.swift */,
+				777B04B82D67189F006FE86A /* ChatModuleService.swift */,
 			);
 			path = ChatModule;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77DEA56E2D66C84B008277CF /* ChatViewController.swift in Sources */,
+				777B04B92D67189F006FE86A /* ChatModuleService.swift in Sources */,
 				77DEA5712D66C872008277CF /* ChatModuleManager.swift in Sources */,
 				77DEA5732D66CFD2008277CF /* BaseViewController.swift in Sources */,
 			);

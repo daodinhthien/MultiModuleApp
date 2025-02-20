@@ -11,9 +11,11 @@ import PayModule
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var contentLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        getInfoView(payService: PayModuleService(), chatService: ChatModuleService())
     }
 
 
@@ -23,6 +25,12 @@ class HomeViewController: UIViewController {
     
     @IBAction func showPayModule(_ sender: Any) {
         PayModuleManager.share.showPayModule(rootVC: self)
+    }
+    
+    private func getInfoView(payService: PayModuleServiceProtocol, chatService: ChatModuleProtocol) {
+        let message = chatService.getMessage() ?? ""
+        let name = payService.getName() ?? ""
+        contentLabel.text = message + " " + name
     }
 }
 
