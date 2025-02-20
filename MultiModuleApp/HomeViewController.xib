@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="MultiModuleApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Cz2-ko-4le" id="hGP-9I-zf2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Cz2-ko-4le">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgi-iD-jWj">
+                    <rect key="frame" x="112.66666666666667" y="409" width="167.66666666666663" height="34.333333333333314"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Show Chat Module"/>
+                    <connections>
+                        <action selector="showChatModule:" destination="-1" eventType="touchUpInside" id="gAd-oK-SVv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="e7f-j2-jQt"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Dgi-iD-jWj" firstAttribute="centerX" secondItem="Cz2-ko-4le" secondAttribute="centerX" id="S2G-lL-q3i"/>
+                <constraint firstItem="Dgi-iD-jWj" firstAttribute="centerY" secondItem="Cz2-ko-4le" secondAttribute="centerY" id="TCB-4N-qPw"/>
+            </constraints>
+            <point key="canvasLocation" x="-451.14503816793894" y="21.83098591549296"/>
+        </view>
+    </objects>
+</document>
