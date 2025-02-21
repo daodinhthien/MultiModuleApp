@@ -14,7 +14,25 @@
 		771D3C292D66E05C00E883F2 /* PayModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771D3C282D66E05C00E883F2 /* PayModuleManager.swift */; };
 		771D3C2B2D66E0D500E883F2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771D3C2A2D66E0D500E883F2 /* BaseViewController.swift */; };
 		777B04B72D67177E006FE86A /* PayModuleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B04B62D67177E006FE86A /* PayModuleService.swift */; };
+		778E1ABE2D681D5500A49560 /* CommonModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778E1ABB2D681D3900A49560 /* CommonModule.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		778E1ABA2D681D3900A49560 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 778E1AB62D681D3900A49560 /* CommonModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 778E1A9D2D680BB900A49560;
+			remoteInfo = CommonModule;
+		};
+		778E1ABC2D681D4800A49560 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 778E1AB62D681D3900A49560 /* CommonModule.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 778E1A9C2D680BB900A49560;
+			remoteInfo = CommonModule;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		19907A16D07BAE1F71FC39E2 /* Pods_PayModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +44,7 @@
 		771D3C282D66E05C00E883F2 /* PayModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayModuleManager.swift; sourceTree = "<group>"; };
 		771D3C2A2D66E0D500E883F2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		777B04B62D67177E006FE86A /* PayModuleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayModuleService.swift; sourceTree = "<group>"; };
+		778E1AB62D681D3900A49560 /* CommonModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommonModule.xcodeproj; path = ../CommonModule/CommonModule.xcodeproj; sourceTree = "<group>"; };
 		DCB112DEF3C4AB502535E6C9 /* Pods-PayModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayModule.debug.xcconfig"; path = "Target Support Files/Pods-PayModule/Pods-PayModule.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -34,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				778E1ABE2D681D5500A49560 /* CommonModule.framework in Frameworks */,
 				2683717DC9D0DF4FD87AFB26 /* Pods_PayModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +74,7 @@
 		771D3C062D66DF3700E883F2 = {
 			isa = PBXGroup;
 			children = (
+				778E1AB52D681D2400A49560 /* Denpendencies */,
 				771D3C122D66DF3700E883F2 /* PayModule */,
 				771D3C112D66DF3700E883F2 /* Products */,
 				088AA5A8FC14BC7223BB9C08 /* Pods */,
@@ -80,6 +101,22 @@
 				777B04B62D67177E006FE86A /* PayModuleService.swift */,
 			);
 			path = PayModule;
+			sourceTree = "<group>";
+		};
+		778E1AB52D681D2400A49560 /* Denpendencies */ = {
+			isa = PBXGroup;
+			children = (
+				778E1AB62D681D3900A49560 /* CommonModule.xcodeproj */,
+			);
+			name = Denpendencies;
+			sourceTree = "<group>";
+		};
+		778E1AB72D681D3900A49560 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				778E1ABB2D681D3900A49560 /* CommonModule.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		9AF9F07F442FDC8102343D48 /* Frameworks */ = {
@@ -117,6 +154,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				778E1ABD2D681D4800A49560 /* PBXTargetDependency */,
 			);
 			name = PayModule;
 			productName = PayModule;
@@ -149,12 +187,28 @@
 			mainGroup = 771D3C062D66DF3700E883F2;
 			productRefGroup = 771D3C112D66DF3700E883F2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 778E1AB72D681D3900A49560 /* Products */;
+					ProjectRef = 778E1AB62D681D3900A49560 /* CommonModule.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				771D3C0F2D66DF3700E883F2 /* PayModule */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		778E1ABB2D681D3900A49560 /* CommonModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonModule.framework;
+			remoteRef = 778E1ABA2D681D3900A49560 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		771D3C0E2D66DF3700E883F2 /* Resources */ = {
@@ -205,6 +259,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		778E1ABD2D681D4800A49560 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CommonModule;
+			targetProxy = 778E1ABC2D681D4800A49560 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		771D3C152D66DF3700E883F2 /* Debug */ = {

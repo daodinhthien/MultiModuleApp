@@ -8,9 +8,11 @@
 import UIKit
 import ChatModule
 import PayModule
+import CommonModule
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
     
     override func viewDidLoad() {
@@ -31,6 +33,16 @@ class HomeViewController: UIViewController {
         let message = chatService.getMessage() ?? ""
         let name = payService.getName() ?? ""
         contentLabel.text = message + " " + name
+    }
+    
+    @IBAction func getDataKeychainAction(_ sender: Any) {
+        getData()
+    }
+    
+    private func getData() {
+        let keyChain = KeyChainService()
+        let result = keyChain.getDataFromKeychain(service: KeychainServiceId.commonService.rawValue, account: "keyAccount")
+        resultLabel.text = "Result: \(result ?? "")"
     }
 }
 

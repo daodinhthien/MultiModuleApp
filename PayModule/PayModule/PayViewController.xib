@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayViewController" customModule="PayModule" customModuleProvider="target">
             <connections>
+                <outlet property="contenTextField" destination="car-lm-5P6" id="y4z-Pj-N3u"/>
+                <outlet property="resultLabel" destination="ALU-xq-gw7" id="zD8-NN-HUo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,16 +21,40 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc9-9J-Kti">
-                    <rect key="frame" x="170.66666666666666" y="408.66666666666669" width="52" height="35"/>
+                    <rect key="frame" x="16" y="408.66666666666669" width="361" height="35"/>
+                    <color key="backgroundColor" red="0.0" green="0.71764705880000002" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="tintColor" red="0.92549020049999997" green="0.92156863209999995" blue="0.91764706370000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Pay"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Lưu"/>
+                    <connections>
+                        <action selector="saveAction:" destination="-1" eventType="touchUpInside" id="MfE-n8-Pg8"/>
+                    </connections>
                 </button>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhập thông tin cần lưu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="car-lm-5P6">
+                    <rect key="frame" x="16" y="349.66666666666669" width="361" height="34"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALU-xq-gw7">
+                    <rect key="frame" x="16" y="298.66666666666669" width="361" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemRedColor"/>
             <constraints>
+                <constraint firstItem="car-lm-5P6" firstAttribute="top" secondItem="ALU-xq-gw7" secondAttribute="bottom" constant="30" id="4A9-PL-l3A"/>
+                <constraint firstItem="Wc9-9J-Kti" firstAttribute="top" secondItem="car-lm-5P6" secondAttribute="bottom" constant="25" id="B4d-Hl-v9j"/>
+                <constraint firstItem="ALU-xq-gw7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="K8R-WH-zcd"/>
+                <constraint firstItem="car-lm-5P6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="TcT-TS-EYC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ALU-xq-gw7" secondAttribute="trailing" constant="16" id="XmM-8I-ihF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="car-lm-5P6" secondAttribute="trailing" constant="16" id="YuA-y2-NUN"/>
                 <constraint firstItem="Wc9-9J-Kti" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="gLN-NT-l43"/>
+                <constraint firstItem="Wc9-9J-Kti" firstAttribute="width" secondItem="car-lm-5P6" secondAttribute="width" id="mtW-vQ-ksU"/>
                 <constraint firstItem="Wc9-9J-Kti" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vY9-CW-tJs"/>
             </constraints>
             <point key="canvasLocation" x="-30" y="20"/>
@@ -36,7 +62,7 @@
     </objects>
     <resources>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
