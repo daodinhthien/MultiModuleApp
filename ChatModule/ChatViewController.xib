@@ -4,12 +4,12 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController" customModule="ChatModule" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="ib1-50-fzi" id="bdK-Vz-tp7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,25 +18,24 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat Module" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zz-hQ-pJh">
-                    <rect key="frame" x="148" y="415.66666666666669" width="97.333333333333314" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ib1-50-fzi">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="VFs-uk-YyO"/>
+                        <outlet property="delegate" destination="-1" id="QJw-j5-4Fd"/>
+                    </connections>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="4zz-hQ-pJh" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="2mT-Wj-2Ju"/>
-                <constraint firstItem="4zz-hQ-pJh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="R69-7O-7Ex"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ib1-50-fzi" secondAttribute="bottom" id="98I-Yp-bVF"/>
+                <constraint firstItem="ib1-50-fzi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Umh-gB-o8x"/>
+                <constraint firstItem="ib1-50-fzi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dwc-Bk-am8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ib1-50-fzi" secondAttribute="trailing" id="wzN-HW-pNC"/>
             </constraints>
             <point key="canvasLocation" x="-30" y="20"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

@@ -40,8 +40,7 @@ class HomeViewController: UIViewController {
     }
     
     private func getData() {
-        let keyChain = KeyChainService()
-        let result = keyChain.getDataFromKeychain(service: KeychainServiceId.commonService.rawValue, account: "keyAccount")
+        let result = KeyChainService.share.getDataFromKeychain(service: KeychainServiceId.commonService.rawValue, account: "keyAccount")
         resultLabel.text = "Result: \(result ?? "")"
     }
 }

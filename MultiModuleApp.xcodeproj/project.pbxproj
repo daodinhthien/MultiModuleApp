@@ -11,6 +11,13 @@
 		771D3C232D66E00C00E883F2 /* PayModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 771D3C202D66DFFA00E883F2 /* PayModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		777B04B92D67189F006FE86A /* ChatModuleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B04B82D67189F006FE86A /* ChatModuleService.swift */; };
 		778E1AAD2D680BEC00A49560 /* CommonModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 778E1AAC2D680BD900A49560 /* CommonModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		778E1AC72D686A6E00A49560 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E1AC52D686A6E00A49560 /* ItemCell.swift */; };
+		778E1AC82D686A6E00A49560 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 778E1AC62D686A6E00A49560 /* ItemCell.xib */; };
+		778E1ACB2D686BA700A49560 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E1ACA2D686BA700A49560 /* Person.swift */; };
+		778E1AD52D686F6500A49560 /* CommonModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778E1AD22D686F3300A49560 /* CommonModule.framework */; };
+		778E1AFA2D6872CE00A49560 /* LoadingModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778E1AF12D6872B600A49560 /* LoadingModule.framework */; };
+		778E1AFD2D6872D900A49560 /* LoadingModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778E1AF12D6872B600A49560 /* LoadingModule.framework */; };
+		778E1B042D6876EB00A49560 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E1B032D6876EB00A49560 /* UIViewController+Extension.swift */; };
 		77DEA4A82D66BA81008277CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DEA4A72D66BA81008277CF /* AppDelegate.swift */; };
 		77DEA4AA2D66BA81008277CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DEA4A92D66BA81008277CF /* SceneDelegate.swift */; };
 		77DEA4AC2D66BA81008277CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DEA4AB2D66BA81008277CF /* ViewController.swift */; };
@@ -55,6 +62,48 @@
 			remoteGlobalIDString = 778E1A9C2D680BB900A49560;
 			remoteInfo = CommonModule;
 		};
+		778E1AD12D686F3300A49560 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 778E1ACD2D686F3300A49560 /* CommonModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 778E1A9D2D680BB900A49560;
+			remoteInfo = CommonModule;
+		};
+		778E1AD32D686F5B00A49560 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 778E1ACD2D686F3300A49560 /* CommonModule.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 778E1A9C2D680BB900A49560;
+			remoteInfo = CommonModule;
+		};
+		778E1AF02D6872B600A49560 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 778E1AEC2D6872B600A49560 /* LoadingModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 778E1AE22D6872A400A49560;
+			remoteInfo = LoadingModule;
+		};
+		778E1AF62D6872BD00A49560 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 778E1AF22D6872BD00A49560 /* LoadingModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 778E1AE22D6872A400A49560;
+			remoteInfo = LoadingModule;
+		};
+		778E1AF82D6872C600A49560 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 778E1AEC2D6872B600A49560 /* LoadingModule.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 778E1AE12D6872A400A49560;
+			remoteInfo = LoadingModule;
+		};
+		778E1AFB2D6872D400A49560 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 778E1AEC2D6872B600A49560 /* LoadingModule.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 778E1AE12D6872A400A49560;
+			remoteInfo = LoadingModule;
+		};
 		77DEA5632D66C80F008277CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 77DEA49C2D66BA81008277CF /* Project object */;
@@ -87,6 +136,13 @@
 		771D3C1B2D66DFFA00E883F2 /* PayModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PayModule.xcodeproj; path = PayModule/PayModule.xcodeproj; sourceTree = "<group>"; };
 		777B04B82D67189F006FE86A /* ChatModuleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModuleService.swift; sourceTree = "<group>"; };
 		778E1AA72D680BD900A49560 /* CommonModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommonModule.xcodeproj; path = CommonModule/CommonModule.xcodeproj; sourceTree = "<group>"; };
+		778E1AC52D686A6E00A49560 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		778E1AC62D686A6E00A49560 /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
+		778E1ACA2D686BA700A49560 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		778E1ACD2D686F3300A49560 /* CommonModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommonModule.xcodeproj; path = CommonModule/CommonModule.xcodeproj; sourceTree = SOURCE_ROOT; };
+		778E1AEC2D6872B600A49560 /* LoadingModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingModule.xcodeproj; path = LoadingModule/LoadingModule.xcodeproj; sourceTree = "<group>"; };
+		778E1AF22D6872BD00A49560 /* LoadingModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoadingModule.xcodeproj; path = LoadingModule/LoadingModule.xcodeproj; sourceTree = SOURCE_ROOT; };
+		778E1B032D6876EB00A49560 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		77DEA4A42D66BA81008277CF /* MultiModuleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiModuleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77DEA4A72D66BA81008277CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77DEA4A92D66BA81008277CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				778E1AFA2D6872CE00A49560 /* LoadingModule.framework in Frameworks */,
 				77DEA5652D66C80F008277CF /* ChatModule.framework in Frameworks */,
 				3B9732F6A7B6E96521190091 /* Pods_MultiModuleApp.framework in Frameworks */,
 			);
@@ -117,6 +174,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				778E1AFD2D6872D900A49560 /* LoadingModule.framework in Frameworks */,
+				778E1AD52D686F6500A49560 /* CommonModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +194,7 @@
 		771D3C1A2D66DF9600E883F2 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				778E1AEC2D6872B600A49560 /* LoadingModule.xcodeproj */,
 				778E1AA72D680BD900A49560 /* CommonModule.xcodeproj */,
 				771D3C1B2D66DFFA00E883F2 /* PayModule.xcodeproj */,
 			);
@@ -155,6 +215,65 @@
 				778E1AAC2D680BD900A49560 /* CommonModule.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		778E1AC42D686A4C00A49560 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				778E1AC52D686A6E00A49560 /* ItemCell.swift */,
+				778E1AC62D686A6E00A49560 /* ItemCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		778E1AC92D686B9400A49560 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				778E1ACA2D686BA700A49560 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		778E1ACC2D686F2400A49560 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				778E1AF22D6872BD00A49560 /* LoadingModule.xcodeproj */,
+				778E1ACD2D686F3300A49560 /* CommonModule.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		778E1ACE2D686F3300A49560 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				778E1AD22D686F3300A49560 /* CommonModule.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		778E1AED2D6872B600A49560 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				778E1AF12D6872B600A49560 /* LoadingModule.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		778E1AF32D6872BD00A49560 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				778E1AF72D6872BD00A49560 /* LoadingModule.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		778E1B022D6876BF00A49560 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				778E1B032D6876EB00A49560 /* UIViewController+Extension.swift */,
+			);
+			name = Extensions;
+			path = "Extensión";
 			sourceTree = "<group>";
 		};
 		77DEA49B2D66BA81008277CF = {
@@ -195,6 +314,10 @@
 		77DEA5602D66C80F008277CF /* ChatModule */ = {
 			isa = PBXGroup;
 			children = (
+				778E1B022D6876BF00A49560 /* Extensions */,
+				778E1ACC2D686F2400A49560 /* Dependencies */,
+				778E1AC92D686B9400A49560 /* Models */,
+				778E1AC42D686A4C00A49560 /* Cells */,
 				77DEA5612D66C80F008277CF /* ChatModule.h */,
 				77DEA56C2D66C84B008277CF /* ChatViewController.swift */,
 				77DEA56D2D66C84B008277CF /* ChatViewController.xib */,
@@ -240,6 +363,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				778E1AF92D6872C600A49560 /* PBXTargetDependency */,
 				778E1AAF2D680BF400A49560 /* PBXTargetDependency */,
 				771D3C222D66E00300E883F2 /* PBXTargetDependency */,
 				77DEA5642D66C80F008277CF /* PBXTargetDependency */,
@@ -261,6 +385,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				778E1AFC2D6872D400A49560 /* PBXTargetDependency */,
+				778E1AD42D686F5B00A49560 /* PBXTargetDependency */,
 			);
 			name = ChatModule;
 			productName = ChatModule;
@@ -299,8 +425,20 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 778E1ACE2D686F3300A49560 /* Products */;
+					ProjectRef = 778E1ACD2D686F3300A49560 /* CommonModule.xcodeproj */;
+				},
+				{
 					ProductGroup = 778E1AA82D680BD900A49560 /* Products */;
 					ProjectRef = 778E1AA72D680BD900A49560 /* CommonModule.xcodeproj */;
+				},
+				{
+					ProductGroup = 778E1AED2D6872B600A49560 /* Products */;
+					ProjectRef = 778E1AEC2D6872B600A49560 /* LoadingModule.xcodeproj */;
+				},
+				{
+					ProductGroup = 778E1AF32D6872BD00A49560 /* Products */;
+					ProjectRef = 778E1AF22D6872BD00A49560 /* LoadingModule.xcodeproj */;
 				},
 				{
 					ProductGroup = 771D3C1C2D66DFFA00E883F2 /* Products */;
@@ -330,6 +468,27 @@
 			remoteRef = 778E1AAB2D680BD900A49560 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		778E1AD22D686F3300A49560 /* CommonModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonModule.framework;
+			remoteRef = 778E1AD12D686F3300A49560 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		778E1AF12D6872B600A49560 /* LoadingModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LoadingModule.framework;
+			remoteRef = 778E1AF02D6872B600A49560 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		778E1AF72D6872BD00A49560 /* LoadingModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LoadingModule.framework;
+			remoteRef = 778E1AF62D6872BD00A49560 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -347,6 +506,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				778E1AC82D686A6E00A49560 /* ItemCell.xib in Resources */,
 				77DEA56F2D66C84B008277CF /* ChatViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,10 +553,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				778E1ACB2D686BA700A49560 /* Person.swift in Sources */,
 				77DEA56E2D66C84B008277CF /* ChatViewController.swift in Sources */,
 				777B04B92D67189F006FE86A /* ChatModuleService.swift in Sources */,
 				77DEA5712D66C872008277CF /* ChatModuleManager.swift in Sources */,
+				778E1B042D6876EB00A49560 /* UIViewController+Extension.swift in Sources */,
 				77DEA5732D66CFD2008277CF /* BaseViewController.swift in Sources */,
+				778E1AC72D686A6E00A49560 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +575,21 @@
 			isa = PBXTargetDependency;
 			name = CommonModule;
 			targetProxy = 778E1AAE2D680BF400A49560 /* PBXContainerItemProxy */;
+		};
+		778E1AD42D686F5B00A49560 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CommonModule;
+			targetProxy = 778E1AD32D686F5B00A49560 /* PBXContainerItemProxy */;
+		};
+		778E1AF92D6872C600A49560 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LoadingModule;
+			targetProxy = 778E1AF82D6872C600A49560 /* PBXContainerItemProxy */;
+		};
+		778E1AFC2D6872D400A49560 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LoadingModule;
+			targetProxy = 778E1AFB2D6872D400A49560 /* PBXContainerItemProxy */;
 		};
 		77DEA5642D66C80F008277CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

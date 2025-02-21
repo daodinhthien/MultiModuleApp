@@ -21,8 +21,7 @@ class PayViewController: BaseViewController {
     }
     
     private func saveData(passWord: String) {
-        let keyChain = KeyChainService()
-        let result = keyChain.saveToKeychain(service: KeychainServiceId.commonService.rawValue, account: "keyAccount", password: passWord)
+        let result = KeyChainService.share.saveToKeychain(service: KeychainServiceId.commonService.rawValue, account: "keyAccount", password: passWord)
         resultLabel.text = result ? " Lưu thành công" : "Lưu thất bại"
     }
     

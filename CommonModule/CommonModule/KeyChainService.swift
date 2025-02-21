@@ -14,6 +14,8 @@ public enum KeychainServiceId: String {
 
 public class KeyChainService: NSObject {
     
+    public static let share = KeyChainService()
+    
     public func saveToKeychain(service: String, account: String, password: String) -> Bool {
         let data = password.data(using: .utf8)!
         
