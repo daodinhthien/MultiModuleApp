@@ -86,4 +86,14 @@ class BaseViewController: UIViewController {
     }
 }
 
+extension UIViewController {
+    private static func genericInstance<T: UIViewController>() -> T {
+        return T.init(nibName: String(describing: self), bundle: Bundle(for: self))
+    }
+    
+    static func instance() -> Self {
+        return genericInstance()
+    }
+}
+
 

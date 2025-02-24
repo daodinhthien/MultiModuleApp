@@ -34,4 +34,10 @@ class PayViewController: BaseViewController {
             resultLabel.text = "Vui lòng nhập thông tin cần lưu"
         }
     }
+    
+    @IBAction func detailAction(_ sender: Any) {
+        let vc = DetailViewController.instance()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

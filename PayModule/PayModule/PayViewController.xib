@@ -43,6 +43,16 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6q-Fx-504">
+                    <rect key="frame" x="16" y="468.66666666666669" width="361" height="35"/>
+                    <color key="backgroundColor" red="0.0" green="0.71764705880000002" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="0.92549020049999997" green="0.92156863209999995" blue="0.91764706370000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Detail"/>
+                    <connections>
+                        <action selector="detailAction:" destination="-1" eventType="touchUpInside" id="GTr-g3-qDl"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemRedColor"/>
@@ -51,10 +61,13 @@
                 <constraint firstItem="Wc9-9J-Kti" firstAttribute="top" secondItem="car-lm-5P6" secondAttribute="bottom" constant="25" id="B4d-Hl-v9j"/>
                 <constraint firstItem="ALU-xq-gw7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="K8R-WH-zcd"/>
                 <constraint firstItem="car-lm-5P6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="TcT-TS-EYC"/>
+                <constraint firstItem="f6q-Fx-504" firstAttribute="trailing" secondItem="Wc9-9J-Kti" secondAttribute="trailing" id="WAC-VK-ejs"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ALU-xq-gw7" secondAttribute="trailing" constant="16" id="XmM-8I-ihF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="car-lm-5P6" secondAttribute="trailing" constant="16" id="YuA-y2-NUN"/>
+                <constraint firstItem="f6q-Fx-504" firstAttribute="leading" secondItem="Wc9-9J-Kti" secondAttribute="leading" id="fBE-wt-I4d"/>
                 <constraint firstItem="Wc9-9J-Kti" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="gLN-NT-l43"/>
                 <constraint firstItem="Wc9-9J-Kti" firstAttribute="width" secondItem="car-lm-5P6" secondAttribute="width" id="mtW-vQ-ksU"/>
+                <constraint firstItem="f6q-Fx-504" firstAttribute="top" secondItem="Wc9-9J-Kti" secondAttribute="bottom" constant="25" id="qs6-je-Fke"/>
                 <constraint firstItem="Wc9-9J-Kti" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vY9-CW-tJs"/>
             </constraints>
             <point key="canvasLocation" x="-30" y="20"/>
