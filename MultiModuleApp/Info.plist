@@ -19,5 +19,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>CFBundleDisplayName</key>
+	<string>$(PRODUCT_DISPLAY_NAME)</string>
+	<key>PRODUCT_ENVIROMENT</key>
+	<string>$(PRODUCT_ENVIROMENT)</string>
 </dict>
 </plist>
